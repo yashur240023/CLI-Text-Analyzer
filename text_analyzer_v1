@@ -1,0 +1,16 @@
+text = input("Enter a sentence: ")
+char = len(text)
+word_list = text.split()
+words = len(word_list)
+period = text.split(".")
+n = len(period)
+end = text.endswith(".")
+if end:
+  sentence = n - 1
+else:
+  sentence = n
+unique_words = len(set(word_list))
+print("The no. of characters in a sentence is: ", char)
+print("The no. of words in a sentence is: ", words)
+print("The no. of sentence is: ", sentence)
+print("The no. of unique words in a sentence is: ", unique_words)
